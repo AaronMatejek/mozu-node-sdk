@@ -14,10 +14,10 @@ var Client = require('../../client'), constants = Client.constants;
 module.exports = Client.sub({
 	getShipments: Client.method({
 		method: constants.verbs.GET,
-		url: '{+tenantPod}api/commerce/shipment/?startIndex={startIndex}&pageSize={pageSize}&sortBy={sortBy}&filter={filter}&q={q}&qLimit={qLimit}&includeBin={includeBin}&responseFields={responseFields}'
+		url: '{+tenantPod}api/commerce/shipments/?startIndex={startIndex}&pageSize={pageSize}&sortBy={sortBy}&filter={filter}&q={q}&qLimit={qLimit}&includeBin={includeBin}&responseFields={responseFields}'
     }),
 	getShipment: Client.method({
 		method: constants.verbs.GET,
-		url: '{+tenantPod}api/commerce/shipment/{shipmentId}?draft={draft}&includeBin={includeBin}&responseFields={responseFields}'
+		url: '{+tenantPod}api/commerce/shipments/{shipmentId}?draft={draft}&includeBin={includeBin}&responseFields={responseFields}'
 	})
 });
