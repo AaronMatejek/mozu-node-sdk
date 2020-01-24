@@ -23,6 +23,7 @@ module.exports = Client.sub({
 	"shipping": require('./commerce/shipping'),
 	"targetRule": require('./commerce/targetRule'),
 	"wishlist": require('./commerce/wishlist'),
-	"wishlists": require('./commerce/wishlists')
+	"wishlists": require('./commerce/wishlists'),
+	"shipment": require('./commerce/shipment')
 });
 
