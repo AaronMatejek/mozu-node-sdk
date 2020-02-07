@@ -33,6 +33,7 @@ function cacheDataAndCreateAuthTicket(res) {
 
 function getPlatformAuthTicket(client) {
   return makeAppAuthClient(client).oauthAuthenticateApp({
+    grant_type: "client_credentials",
     applicationId: client.context.appKey,
     sharedSecret: client.context.sharedSecret
   }, {
