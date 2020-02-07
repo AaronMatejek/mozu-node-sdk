@@ -42,12 +42,12 @@ module.exports = {
     PUT: 'PUT',
     DELETE: 'DELETE'
   },
-  headerPrefix: 'x-vol-',
+  headerPrefix: '',
   headers: {
     APPCLAIMS: 'Authorization',
     USERCLAIMS: 'user-claims',
-    TENANT: 'tenant',
-    SITE: 'site',
+    TENANT: 'x-vol-tenant',
+    SITE: 'x-vol-site',
     MASTERCATALOG: 'master-catalog',
     CATALOG: 'catalog',
     DATAVIEWMODE: 'dataview-mode',
