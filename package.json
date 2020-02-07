@@ -24,7 +24,7 @@
   "version": "2.14.1-1",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Mozu/mozu-node-sdk"
+    "url": "https://github.com/Mozu/mozu-node-sdk-"
   },
   "dependencies": {
     "concat-stream": "^1.5.1",

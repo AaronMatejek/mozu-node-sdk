@@ -30,7 +30,7 @@ function cacheDataAndCreateAuthTicket(res) {
   }
   let authTicket = new AuthTicket(res);
 
-  authTicket.Authorization = `Bearer ${authTicket.accessToken}`;
+  authTicket.accessToken = `Bearer ${authTicket.accessToken}`;
 
   return authTicket;
 }

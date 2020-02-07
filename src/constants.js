@@ -43,7 +43,7 @@ module.exports = {
   },
   headerPrefix: 'x-vol-',
   headers: {
-    APPCLAIMS: 'app-claims',
+    APPCLAIMS: 'Authorization',
     USERCLAIMS: 'user-claims',
     TENANT: 'tenant',
     SITE: 'site',
