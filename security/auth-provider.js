@@ -28,7 +28,11 @@ function cacheDataAndCreateAuthTicket(res) {
       TenantCache.add(tenants[i]);
     }
   }
-  return new AuthTicket(res);
+  let authTicket = new AuthTicket(res);
+
+  authTicket.Authorization = `Bearer ${authTicket.accessToken}`;
+
+  return authTicket;
 }
 
 function getPlatformAuthTicket(client) {
